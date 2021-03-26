@@ -40,7 +40,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     --corBackgroundSecundaria: #04133d;
     --corBackgroundDark:#0e0e0e;
     --corTextPrimaria:#636363;
-    --corTextoSecudaria:#000;
+    --corTextSecudaria:#000;
 
 }
 
@@ -79,7 +79,7 @@ header .coluna img{
 }
 header .coluna h1{
     font-size: 1.5rem;
-    color:var(--corTextoSecudaria);
+    color:var(--corTextSecudaria);
 }
 header .coluna p{
     font-size: 1rem;
@@ -93,7 +93,7 @@ header .coluna ul li{
 }
 header .coluna ul li a{
     font-size: 1rem;
-    color:var(--corTextoSecudaria);
+    color:var(--corTextSecudaria);
 }
 
 
@@ -146,7 +146,7 @@ main .coluna section{
     border-bottom: 1px solid #d4e9ff;
     margin: 0 0 20px;
     min-height: 187px;
-    color:var(--corTextoSecudaria);
+    color:var(--corTextSecudaria);
 }
 
 main .coluna section h2{
@@ -211,46 +211,7 @@ label span{
     transition: all ease .3s;
 }
 
-.ativar-dark:checked ~ .dark-mode label{
-    background-color: #d4e9ff;
-}
-.ativar-dark:checked ~ .dark-mode label span{
-    background-color: var(--corBackgroundSecundaria);
-    /* margin-left: 21px; */
-    transform: translateX(21px);
-    transition: all ease .3s;
-}
-
-.ativar-dark:checked ~ .dark-mode{
-    --corBackgroundPrimaria: #000;
-    --corBackgroundSecundaria: #000;
-    --corTextPrimaria:#fff;
-    --corTextoSecudaria:#fff;
-}
-.ativar-dark:checked ~ .dark-mode header{
-    background-color:var(--corBackgroundSecundaria) ;
-}
-.ativar-dark:checked ~ .dark-mode main {
-    background-color:var(--corBackgroundSecundaria) ;
-} 
-.ativar-dark:checked ~ .dark-mode .container{
-    background-color:var(--corBackgroundDark) ;
-}
-.ativar-dark:checked ~ .dark-mode .gradient-border {
-    background-color:var(--corBackgroundDark) ;
-}
-
-/* #box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 200px;
-    color: white;
-    font-family: 'Raleway';
-    font-size: 2.5rem;
-} */
-  .gradient-border {
+.gradient-border {
     font-size: 0.9rem;
     --borderWidth: 5px;
     background: white;
@@ -271,7 +232,36 @@ label span{
     animation: animatedgradient 3s ease alternate infinite;
     background-size: 300% 300%;
 }
-  
+
+.ativar-dark:checked ~ .dark-mode label{
+    background-color: #d4e9ff;
+}
+.ativar-dark:checked ~ .dark-mode label span{
+    background-color: var(--corBackgroundSecundaria);
+    /* margin-left: 21px; */
+    transform: translateX(21px);
+    transition: all ease .3s;
+}
+
+.ativar-dark:checked ~ .dark-mode{
+    --corBackgroundPrimaria: #000;
+    --corBackgroundSecundaria: #000;
+    --corTextPrimaria:#fff;
+    --corTextSecudaria:#fff;
+}
+.ativar-dark:checked ~ .dark-mode header{
+    background-color:var(--corBackgroundSecundaria) ;
+}
+.ativar-dark:checked ~ .dark-mode main {
+    background-color:var(--corBackgroundSecundaria) ;
+} 
+.ativar-dark:checked ~ .dark-mode .container{
+    background-color:var(--corBackgroundDark) ;
+}
+.ativar-dark:checked ~ .dark-mode .gradient-border {
+    background-color:var(--corBackgroundDark) ;
+}
+
 @keyframes animatedgradient {
     0% {
         background-position: 0% 50%;
