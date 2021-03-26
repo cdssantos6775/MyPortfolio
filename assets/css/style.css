@@ -170,12 +170,12 @@ main .coluna section ul li strong{
 
 /* EXTRAS */
 
-#facephoto .rotate {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+.rotate90 {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
 }
 .ativar-dark{
     width: 50px;
